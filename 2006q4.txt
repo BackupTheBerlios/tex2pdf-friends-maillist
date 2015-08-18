@@ -1,0 +1,285 @@
+From Kornel.Benko at berlin.de  Fri Nov 17 14:09:33 2006
+From: Kornel.Benko at berlin.de (Kornel Benko)
+Date: Fri, 17 Nov 2006 14:09:33 +0100
+Subject: [tex2pdf-friends] Anyone there listenig?
+Message-ID: <200611171409.45770.Kornel.Benko@berlin.de>
+
+I have a patch for tex2pdf because of the new upcomming
+release of lyx1.5.
+I'm unsure though, if this may be the correct list.
+
+	Kornel
+-- 
+Kornel Benko
+Kornel.Benko at berlin.de
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/tex2pdf-friends/attachments/20061117/18285ccc/attachment.pgp>
+
+From Jean-Pierre.Chretien at cert.fr  Fri Nov 17 15:13:16 2006
+From: Jean-Pierre.Chretien at cert.fr (Jean-Pierre Chretien)
+Date: Fri, 17 Nov 2006 15:13:16 +0100 (MET)
+Subject: [tex2pdf-friends] Anyone there listenig?
+Message-ID: <200611171413.kAHEDGZ14185@cressida.cert.fr>
+
+
+>>From: Kornel Benko <Kornel.Benko at berlin.de>
+>>To: tex2pdf-friends at lists.berlios.de
+>>Date: Fri, 17 Nov 2006 14:09:33 +0100
+>>Subject: [tex2pdf-friends] Anyone there listenig?
+>>
+
+Loud and clear.
+But I have no access to the project to commit your patch :-(
+
+Thanks for awakening this list.
+
+-- 
+Jean-Pierre
+
+
+
+From Kornel.Benko at berlin.de  Fri Nov 17 15:26:36 2006
+From: Kornel.Benko at berlin.de (Kornel Benko)
+Date: Fri, 17 Nov 2006 15:26:36 +0100
+Subject: [tex2pdf-friends] Anyone there listenig?
+In-Reply-To: <200611171413.kAHEDGZ14185@cressida.cert.fr>
+References: <200611171413.kAHEDGZ14185@cressida.cert.fr>
+Message-ID: <200611171526.41976.Kornel.Benko@berlin.de>
+
+Am Freitag, 17. November 2006 15:13 schrieb Jean-Pierre Chretien:
+> 
+> >>From: Kornel Benko <Kornel.Benko at berlin.de>
+> >>To: tex2pdf-friends at lists.berlios.de
+> >>Date: Fri, 17 Nov 2006 14:09:33 +0100
+> >>Subject: [tex2pdf-friends] Anyone there listenig?
+> >>
+> 
+> Loud and clear.
+> But I have no access to the project to commit your patch :-(
+
+I was afraid to get a report like this. :(
+
+> Thanks for awakening this list.
+
+Ok. But this list seems to need some coffee first.
+
+	Kornel
+-- 
+Kornel Benko
+Kornel.Benko at berlin.de
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/tex2pdf-friends/attachments/20061117/7efb9ae6/attachment.pgp>
+
+From mlsone at forevers.de  Tue Nov 21 15:39:25 2006
+From: mlsone at forevers.de (Steffen)
+Date: Tue, 21 Nov 2006 15:39:25 +0100
+Subject: [tex2pdf-friends] I am back ;-)
+Message-ID: <45630F9D.6030604@forevers.de>
+
+Hello Kornel,
+
+sorry for not responding I was no longer subscribed to the list by 
+accident as I have deleted the corresponding email address because of spam.
+
+After a wake-up-message from mariux I have now re-subscribed.
+
+I thought tex2pdf is no longer needed as LyX or even pdftex is doing all 
+the necessary stuff on its own now. And as a result the tool has zero 
+users at the moment. So, I am pleased to hear that it is still in use at 
+least by one person. :-)
+
+So, you have a patch? Post it to the list or if you prefer it send it to 
+me in private.
+
+  Steffen
+
+
+From Jean-Pierre.Chretien at cert.fr  Tue Nov 21 16:38:04 2006
+From: Jean-Pierre.Chretien at cert.fr (Jean-Pierre Chretien)
+Date: Tue, 21 Nov 2006 16:38:04 +0100 (MET)
+Subject: [tex2pdf-friends] I am back ;-)
+Message-ID: <200611211538.kALFc4Z26029@cressida.cert.fr>
+
+
+>>X-Original-To: tex2pdf-friends at berlios.de
+>>Date: Tue, 21 Nov 2006 15:39:25 +0100
+>>From: Steffen <mlsone at forevers.de>
+>>To: tex2pdf-friends at berlios.de
+>>Subject: [tex2pdf-friends] I am back ;-)
+>>
+>>Hello Kornel,
+>>
+>>sorry for not responding I was no longer subscribed to the list by 
+>>accident as I have deleted the corresponding email address because of spam.
+>>
+>>After a wake-up-message from mariux I have now re-subscribed.
+>>
+>>I thought tex2pdf is no longer needed as LyX or even pdftex is doing all 
+>>the necessary stuff on its own now. And as a result the tool has zero 
+>>users at the moment. So, I am pleased to hear that it is still in use at 
+>>least by one person. :-)
+
+Count +1
+
+Attached is a mail where I find some features of tex2pdf still useful.
+
+Regards, and glad to hear again from you.
+
+-- 
+Jean-Pierre
+-------------- next part --------------
+An embedded message was scrubbed...
+From: Postmaster
+Subject: Message from mail server       
+Date: Tue, 21 Nov 2006 16:36:07 +0100 (MET)
+Size: 304
+URL: <https://lists.berlios.de/pipermail/tex2pdf-friends/attachments/20061121/158fb793/attachment.mht>
+
+From chretien  Mon Nov 20 09:04:56 2006
+From: chretien (Jean-Pierre Chretien)
+Date: Mon, 20 Nov 2006 09:04:56 +0100 (MET)
+Subject: command \lyxdot in the upcomming version of lyx 1.5
+Message-ID: <200611200804.kAK84uZ07033@cressida.cert.fr>
+
+
+>>Date: Sun, 19 Nov 2006 03:16:59 +0100
+>>From: Uwe St??hr <uwestoehr at web.de>
+>>To: Jean-Pierre.Chretien at cert.fr
+>>CC: Kornel.Benko at berlin.de
+>>Subject: Re: command \lyxdot in the upcomming version of lyx 1.5
+>>
+>> > Maybe Uwe St??hr could take the task of maintaining the project? I
+>> > mean, no development involved, just keep the list open?
+>>
+>>Hi Jean-Pierre,
+>>
+>>Kornel kindly forwarded me your message. I unfortunaly missed the 
+>>problematic and the details.
+>>What exactly is the \lyxdot problem?
+
+In 1.5 a LyX version of the dot has been added, so that the regular expressions
+in tex2pdf which extracted the graphics file name fails.
+Kornel added a small patch to make tex2pdf still work, so he wanted to commit it to the
+project.
+
+>>
+>>About maintaining the tex2pdf project: For what tex2pdf is currently 
+>>needed? Since LyX 1.3 we have now the export "PDF (pdflatex)" that does 
+>>everything that needs to be done to get beautiful PDFs. In LyX 1.4 we 
+>>now also a special graphics handling for pdflatex because PDF-, PNG-, 
+>>and JPG-images can directly be embedded to PDF-files.
+
+Sure, but tex2pdf handles other stuff, like managing hyperref externally, static conversion
+of eps files to pdf with caching, makeindex management, etc. which may be used from inside LyX (here I have added
+a pdf3 format to be able to create pdf from the View/Export menu with tex2pdf), and is not bound to
+lyx : tex2pdf foo.lyx just adds lyx -e latex foo.lyx and then works an foo.tex.
+
+>>
+>>Is there a feature left that is provided by tex2pdf that is not built in 
+>>LyX 1.4?
+
+The hyperref management: take e.g. an article for a conference, build it with plain latex/dvi compilation,
+once it's OK that way, a tex2pdf run provide an hypetexed version (with PDF toc) with no extra coding.
+
+The compilation speed: with a doc with a large amount of figures, it's mure more efficient to optimize the
+layout with palin latex compilation, and to shift to pdflatex just for the last one.
+
+Semms that the tex2pdf project (which is frozen since october 23, 2003) should however cope with
+the infrequent changes in LyX which make it fail, so some commits may be needed from time to time.
+This one is the first one since the last release.
+
+I suggested your name because your LyX Installer project is on berlios.de, as tex2pdf. But I see on the project
+page that there is a new admin (Marius Tolzmann).
+
+I should have checked before, sorry, Kornel should contact him to see what's possible.
+
+Thank you for your message.
+
+Regards
+
+-- 
+Jean-Pierre
+
+
+
+
+
+
+--Cete_of_Badgers_565_000--
+
+
+From mlsone at forevers.de  Thu Dec 14 17:36:25 2006
+From: mlsone at forevers.de (Steffen)
+Date: Thu, 14 Dec 2006 17:36:25 +0100
+Subject: [tex2pdf-friends] lyxdot patch applied
+Message-ID: <45817D89.8050303@forevers.de>
+
+Hello!
+
+Finally, I looked up how to use cvs again. It has been a long time ... ;-)
+
+Kornel's patch is now uploaded to the CVS repository and I am ready to 
+accept more patches if there are any.
+
+Thanks to Kornel again for the patch!
+
+Bye, Steffen
+
+
+
+From Kornel.Benko at berlin.de  Thu Dec 14 18:20:51 2006
+From: Kornel.Benko at berlin.de (Kornel Benko)
+Date: Thu, 14 Dec 2006 18:20:51 +0100
+Subject: [tex2pdf-friends] lyxdot patch applied
+In-Reply-To: <45817D89.8050303@forevers.de>
+References: <45817D89.8050303@forevers.de>
+Message-ID: <200612141821.05828.Kornel.Benko@berlin.de>
+
+Am Donnerstag, 14. Dezember 2006 17:36 schrieb Steffen:
+> Hello!
+>
+> Finally, I looked up how to use cvs again. It has been a long time ... ;-)
+>
+> Kornel's patch is now uploaded to the CVS repository and I am ready to
+> accept more patches if there are any.
+>
+> Thanks to Kornel again for the patch!
+
+I have a second minor patch ...
+
+If you are on a unix-system and want to handle a tex-file
+created with a windows-lyx, so the embedded \r are very disturbing.
+This patch removes them.
+I also had some errors on lines starting with "\begin\{document} %"
+
+> Bye, Steffen
+
+	Kornel
+-- 
+Kornel Benko
+Kornel.Benko at berlin.de
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: ,x
+Type: text/x-diff
+Size: 800 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/tex2pdf-friends/attachments/20061214/9ffa82d3/attachment.diff>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/tex2pdf-friends/attachments/20061214/9ffa82d3/attachment.pgp>
+

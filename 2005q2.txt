@@ -1,0 +1,26 @@
+From Marco.Moeller at gmxpro.de  Thu May 26 12:10:30 2005
+From: Marco.Moeller at gmxpro.de (Marco =?ISO-8859-1?Q?M=F6ller?=)
+Date: Thu, 26 May 2005 12:10:30 +0200
+Subject: [tex2pdf-friends] no Index in PDF
+Message-ID: <1117102230.5355.13.camel@linux.local>
+
+Hi,
+
+i have some problems with your tool. In my DVI preview i see the Index
+at the end of my files, but not in the exportet pdf. Have you some
+Ideas?
+I atteteched a smale sample file, so you are able the check the "bug"??
+
+Thanks for your help
+
+
+
+Marco M?ller <Marco.Moeller at gmxpro.de>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: FS-EinfuehrungTheoPhysik-SS05.lyx
+Type: application/x-lyx
+Size: 38505 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/tex2pdf-friends/attachments/20050526/8d2b6747/attachment.lyx>
+

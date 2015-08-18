@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [tex2pdf-friends] Document parsing
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/tex2pdf-friends/2004q3/index.html" >
+   <LINK REL="made" HREF="mailto:tex2pdf-friends%40lists.berlios.de?Subject=Re%3A%20%5Btex2pdf-friends%5D%20Document%20parsing&In-Reply-To=%3C200409071428.i87ESFK07234%40cressida.cert.fr%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000006.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[tex2pdf-friends] Document parsing</H1>
+    <B>Jean-Pierre Chretien</B> 
+    <A HREF="mailto:tex2pdf-friends%40lists.berlios.de?Subject=Re%3A%20%5Btex2pdf-friends%5D%20Document%20parsing&In-Reply-To=%3C200409071428.i87ESFK07234%40cressida.cert.fr%3E"
+       TITLE="[tex2pdf-friends] Document parsing">Jean-Pierre.Chretien at cert.fr
+       </A><BR>
+    <I>Tue Sep  7 16:28:15 CEST 2004</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000006.html">[tex2pdf-friends] Document parsing
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#5">[ date ]</a>
+              <a href="thread.html#5">[ thread ]</a>
+              <a href="subject.html#5">[ subject ]</a>
+              <a href="author.html#5">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>
+Hello,
+
+Document parsing fails if the document environment begins with
+\begin{document}%
+(or any % further on the line).
+
+Attached is a patch against 3.1.20.
+
+Regards
+
+-- 
+Jean-Pierre
+-------------- next part --------------
+*** tex2pdf-3.1.20	Tue Sep  7 15:07:03 2004
+--- tex2pdf	Tue Sep  7 15:07:22 2004
+***************
+*** 2328,2334 ****
+  
+     ### prepare the LaTeX code for PDF generation 
+     if ( $adjust_preamble eq $YES ) {
+!       $contents =~ m/^ *\\begin\{document\} *$/m;
+        $preamble = $`;
+        # Just to make sure that the original latex preamble goes
+        # to the included documents
+--- 2328,2334 ----
+  
+     ### prepare the LaTeX code for PDF generation 
+     if ( $adjust_preamble eq $YES ) {
+!       $contents =~ m/^ *\\begin\{document\}[ %]*$/m;
+        $preamble = $`;
+        # Just to make sure that the original latex preamble goes
+        # to the included documents
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000006.html">[tex2pdf-friends] Document parsing
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#5">[ date ]</a>
+              <a href="thread.html#5">[ thread ]</a>
+              <a href="subject.html#5">[ subject ]</a>
+              <a href="author.html#5">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/tex2pdf-friends">More information about the tex2pdf-friends
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,127 @@
+From sun.wei at huawei.com  Thu May  8 08:43:57 2008
+From: sun.wei at huawei.com (sunwei 28890)
+Date: Thu, 08 May 2008 14:43:57 +0800
+Subject: [tex2pdf-friends] Help!!
+Message-ID: <fd27b02b9cf9e.9cf9efd27b02b@huawei.com>
+
+Hello all,
+
+  I?m a project manager just involving in a big project(About 0.5 million users). I just using tex2pdf tool to transfer TEX file to PDF. But the performance is not accepted, especially in IBM AIX operating system.
+
+  In windows, the performance is about 1 second on file. But in AIX(4 CPU, 8G memory), it needs 20 seconds. 
+
+  Can anybody give me some advice about this problem. Now I face grate pressure from the customer. The customer need to process all 0.5 million files in one day. 
+
+  Thanks.
+
+Paul Suen
+Huawei Technologies Co., Ltd.
+Mob:    +8613776611188(China)
+Office: +862584565744(China) 
+Email:  sun.wei at huawei.com 
+
+*******************************************************
+This e-mail and its attachments contain confidential information from HUAWEI, which is intended only for the person or entity whose address is listed above. Any use of the information contained herein in any way (including, but not limited to, total or partial disclosure, reproduction, or dissemination) by persons other than the intended recipient(s) is prohibited. If you receive this e-mail in error, please notify the sender by phone or e-
+mail immediately and delete it!
+*******************************************************
+
+
+
+From mlsone at forevers.de  Thu May  8 09:15:18 2008
+From: mlsone at forevers.de (Steffen)
+Date: Thu, 08 May 2008 09:15:18 +0200
+Subject: [tex2pdf-friends] Help!!
+In-Reply-To: <fd27b02b9cf9e.9cf9efd27b02b@huawei.com>
+References: <fd27b02b9cf9e.9cf9efd27b02b@huawei.com>
+Message-ID: <4822A886.8090209@forevers.de>
+
+sunwei 28890 wrote:
+Hello Paul Suen,
+
+tex2pdf is only a front-end script for pdftex. I guess pdftex takes most 
+of your performance. So, if you want to increase the speed you should 
+look at pdftex.
+
+You can find more information here:
+http://www.tug.org/applications/pdftex/
+
+Good luck.
+
+Bye, Steffen
+
+> Hello all,
+> 
+> I?m a project manager just involving in a big project(About 0.5
+> million users). I just using tex2pdf tool to transfer TEX file to
+> PDF. But the performance is not accepted, especially in IBM AIX
+> operating system.
+> 
+> In windows, the performance is about 1 second on file. But in AIX(4
+> CPU, 8G memory), it needs 20 seconds.
+> 
+> Can anybody give me some advice about this problem. Now I face grate
+> pressure from the customer. The customer need to process all 0.5
+> million files in one day.
+> 
+> Thanks.
+> 
+> Paul Suen Huawei Technologies Co., Ltd. Mob:    +8613776611188(China)
+>  Office: +862584565744(China) Email:  sun.wei at huawei.com
+> 
+
+
+From sun.wei at huawei.com  Thu May  8 09:49:45 2008
+From: sun.wei at huawei.com (Paul Suen)
+Date: Thu, 08 May 2008 15:49:45 +0800
+Subject: [tex2pdf-friends] =?gb2312?b?tPC4tDogIEhlbHAhIQ==?=
+In-Reply-To: <4822A886.8090209@forevers.de>
+Message-ID: <029001c8b0e0$156606f0$750ba40a@china.huawei.com>
+
+Hello Steffen,
+  Thank you!!! Steffen. I will contact pdftex mailing list.
+Paul
+
+-----????-----
+???: Steffen [mailto:mlsone at forevers.de] 
+????: 2008?5?8? 15:15
+???: sunwei 28890
+??: tex2pdf-friends at lists.berlios.de
+??: Re: [tex2pdf-friends] Help!!
+
+sunwei 28890 wrote:
+Hello Paul Suen,
+
+tex2pdf is only a front-end script for pdftex. I guess pdftex takes most 
+of your performance. So, if you want to increase the speed you should 
+look at pdftex.
+
+You can find more information here:
+http://www.tug.org/applications/pdftex/
+
+Good luck.
+
+Bye, Steffen
+
+> Hello all,
+> 
+> I?m a project manager just involving in a big project(About 0.5
+> million users). I just using tex2pdf tool to transfer TEX file to
+> PDF. But the performance is not accepted, especially in IBM AIX
+> operating system.
+> 
+> In windows, the performance is about 1 second on file. But in AIX(4
+> CPU, 8G memory), it needs 20 seconds.
+> 
+> Can anybody give me some advice about this problem. Now I face grate
+> pressure from the customer. The customer need to process all 0.5
+> million files in one day.
+> 
+> Thanks.
+> 
+> Paul Suen Huawei Technologies Co., Ltd. Mob:    +8613776611188(China)
+>  Office: +862584565744(China) Email:  sun.wei at huawei.com
+> 
+
+
+
+

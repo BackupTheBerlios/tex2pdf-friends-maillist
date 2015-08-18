@@ -1,0 +1,133 @@
+From mlone at forevers.de  Mon Apr 26 05:38:36 2004
+From: mlone at forevers.de (Steffen Evers)
+Date: Mon, 26 Apr 2004 05:38:36 +0200
+Subject: [tex2pdf-friends] New tex2pdf-friends list says Hello
+Message-ID: <20040426033836.GB31162@insel.cs.tu-berlin.de>
+
+Welcome to the new list!
+
+For the subscribers of the announce list:
+As this list is not limited to announcements anymore, there might be
+more traffic. However, it was quite calme around tex2pdf in the recent
+past. So, I do not expect many more mails.
+
+If you do not want get further mails please unsubscribe here:
+http://lists.berlios.de/mailman/listinfo/tex2pdf-friends/
+
+Bye, Steffen
+
+
+
+From Jean-Pierre.Chretien at cert.fr  Mon Apr 26 16:35:04 2004
+From: Jean-Pierre.Chretien at cert.fr (Jean-Pierre.Chretien)
+Date: Mon, 26 Apr 2004 16:35:04 +0200 (MEST)
+Subject: [tex2pdf-friends] Using eps2eps to solve figure rotation problems
+Message-ID: <200404261435.i3QEZ4p10509@cressida.cert.fr>
+
+Hello,
+
+I posted a mail in the old tex2pdf list about the use of
+eps2eps instead of convert.
+
+Angus Leeming (thank him) showed me that these were the same
+(I thought that epswrite output of gs would
+keep the vector structure of eps files, and this is a mistake 
+as a simple test can show). Both IM and esps2eps use
+the same gs filter.
+
+Identification of sources of undesired eps figure rotation
+between ps output and pdf output remains to be done in
+order to set up efficient filters...
+
+-- 
+Jean-Pierre
+
+
+
+From roland-schmitz at gmx.de  Sun Jun 13 15:51:12 2004
+From: roland-schmitz at gmx.de (Roland Schmitz)
+Date: Sun, 13 Jun 2004 15:51:12 +0200
+Subject: [tex2pdf-friends] Missing index, and uncomplete bookmarks
+Message-ID: <200406131551.12215.roland-schmitz@gmx.de>
+
+Hi tex2pdf users,
+
+i'm a newbee with tex2pdf, but i've got two problems with tex2pdf and lyx.
+1) at the end of my document there is the bibliograhpy and the index. If i 
+gererate a pdf document with tex2pdf the index is missing, if i use dvipdfm 
+it's ok.
+2) acroread show's all chapters of my document in the bookmarklist expect one 
+chapter. I can't the any difference, between this chapter an the other ones.
+
+-- 
+Mit freundlichem Gruss    Yours sincerely
+
+  Roland Schmitz
+
+
+From Jean-Pierre.Chretien at cert.fr  Thu Jun 17 11:29:08 2004
+From: Jean-Pierre.Chretien at cert.fr (Jean-Pierre.Chretien)
+Date: Thu, 17 Jun 2004 11:29:08 +0200 (MEST)
+Subject: [tex2pdf-friends] Re: Missing index, and uncomplete bookmarks
+Message-ID: <200406170929.i5H9T8K14876@cressida.cert.fr>
+
+>>From: Roland Schmitz <roland-schmitz at gmx.de>
+>>To: tex2pdf-friends at lists.berlios.de
+>>Subject: Missing index, and uncomplete bookmarks
+>>Date: Sun, 13 Jun 2004 15:51:12 +0200
+>>
+>>Hi tex2pdf users,
+>>
+>>i'm a newbee with tex2pdf, but i've got two problems with tex2pdf and lyx.
+>>1) at the end of my document there is the bibliograhpy and the index. If i 
+>>gererate a pdf document with tex2pdf the index is missing, if i use dvipdfm 
+>>it's ok.
+
+You need to configure tex2pdf to activate makeindex, run
+tex2pdf -c
+to specify which index file to use, and any other makeindex option
+
+>>2) acroread show's all chapters of my document in the bookmarklist expect one 
+>>(the second) chapter. I can't the any difference, between this chapter an the 
+>>other ones.
+
+Check the log, probably something prevents hyperref to compute the bookmark.
+You will see e.g. for math that it fails, but it does half the work
+(the bookmarks miss the math, simply).
+
+-- 
+Jean-Pierre
+
+
+
+
+From Jean-Pierre.Chretien at cert.fr  Wed Jun 23 19:18:18 2004
+From: Jean-Pierre.Chretien at cert.fr (Jean-Pierre.Chretien)
+Date: Wed, 23 Jun 2004 19:18:18 +0200 (MEST)
+Subject: [tex2pdf-friends] Re: Using eps2eps to solve figure rotation problems
+Message-ID: <200406231718.i5NHIIK11937@cressida.cert.fr>
+
+>>Date: Mon, 26 Apr 2004 16:35:04 +0200 (MEST)
+>>From: "Jean-Pierre.Chretien" <chretien>
+>>Subject: Using eps2eps to solve figure rotation problems
+>>To: tex2pdf-friends at lists.berlios.de
+>>
+>>
+>>Hello,
+
+ [...]
+>>Identification of sources of undesired eps figure rotation
+>>between ps output and pdf output remains to be done in
+>>order to set up efficient filters...
+
+It turns out here that it came from gs after all: upgrading from
+7.05 to 8.14 on Solaris 2.8 made the problem disappear
+on my favourite example.
+
+Good news then, this bored me for a while.
+
+-- 
+Jean-Pierre
+
+
+

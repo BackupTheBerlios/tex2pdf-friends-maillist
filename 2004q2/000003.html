@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [tex2pdf-friends] Re: Missing index, and uncomplete bookmarks
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/tex2pdf-friends/2004q2/index.html" >
+   <LINK REL="made" HREF="mailto:tex2pdf-friends%40lists.berlios.de?Subject=Re%3A%20%5Btex2pdf-friends%5D%20Re%3A%20Missing%20index%2C%20and%20uncomplete%20bookmarks&In-Reply-To=%3C200406170929.i5H9T8K14876%40cressida.cert.fr%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000002.html">
+   <LINK REL="Next"  HREF="000004.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[tex2pdf-friends] Re: Missing index, and uncomplete bookmarks</H1>
+    <B>Jean-Pierre.Chretien</B> 
+    <A HREF="mailto:tex2pdf-friends%40lists.berlios.de?Subject=Re%3A%20%5Btex2pdf-friends%5D%20Re%3A%20Missing%20index%2C%20and%20uncomplete%20bookmarks&In-Reply-To=%3C200406170929.i5H9T8K14876%40cressida.cert.fr%3E"
+       TITLE="[tex2pdf-friends] Re: Missing index, and uncomplete bookmarks">Jean-Pierre.Chretien at cert.fr
+       </A><BR>
+    <I>Thu Jun 17 11:29:08 CEST 2004</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000002.html">[tex2pdf-friends] Missing index, and uncomplete bookmarks
+</A></li>
+        <LI>Next message: <A HREF="000004.html">[tex2pdf-friends] Re: Using eps2eps to solve figure rotation problems
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#3">[ date ]</a>
+              <a href="thread.html#3">[ thread ]</a>
+              <a href="subject.html#3">[ subject ]</a>
+              <a href="author.html#3">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>&gt;&gt;<i>From: Roland Schmitz &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/tex2pdf-friends">roland-schmitz at gmx.de</A>&gt;
+</I>&gt;&gt;<i>To: <A HREF="https://lists.berlios.de/mailman/listinfo/tex2pdf-friends">tex2pdf-friends at lists.berlios.de</A>
+</I>&gt;&gt;<i>Subject: Missing index, and uncomplete bookmarks
+</I>&gt;&gt;<i>Date: Sun, 13 Jun 2004 15:51:12 +0200
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>Hi tex2pdf users,
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>i'm a newbee with tex2pdf, but i've got two problems with tex2pdf and lyx.
+</I>&gt;&gt;<i>1) at the end of my document there is the bibliograhpy and the index. If i 
+</I>&gt;&gt;<i>gererate a pdf document with tex2pdf the index is missing, if i use dvipdfm 
+</I>&gt;&gt;<i>it's ok.
+</I>
+You need to configure tex2pdf to activate makeindex, run
+tex2pdf -c
+to specify which index file to use, and any other makeindex option
+
+&gt;&gt;<i>2) acroread show's all chapters of my document in the bookmarklist expect one 
+</I>&gt;&gt;<i>(the second) chapter. I can't the any difference, between this chapter an the 
+</I>&gt;&gt;<i>other ones.
+</I>
+Check the log, probably something prevents hyperref to compute the bookmark.
+You will see e.g. for math that it fails, but it does half the work
+(the bookmarks miss the math, simply).
+
+-- 
+Jean-Pierre
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000002.html">[tex2pdf-friends] Missing index, and uncomplete bookmarks
+</A></li>
+	<LI>Next message: <A HREF="000004.html">[tex2pdf-friends] Re: Using eps2eps to solve figure rotation problems
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#3">[ date ]</a>
+              <a href="thread.html#3">[ thread ]</a>
+              <a href="subject.html#3">[ subject ]</a>
+              <a href="author.html#3">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/tex2pdf-friends">More information about the tex2pdf-friends
+mailing list</a><br>
+</body></html>

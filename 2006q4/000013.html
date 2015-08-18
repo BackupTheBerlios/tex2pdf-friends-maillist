@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> command \lyxdot in the upcomming version of lyx 1.5
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/tex2pdf-friends/2006q4/index.html" >
+   <LINK REL="made" HREF="mailto:tex2pdf-friends%40lists.berlios.de?Subject=Re%3A%20command%20%5Clyxdot%20in%20the%20upcomming%20version%20of%20lyx%201.5&In-Reply-To=%3C200611200804.kAK84uZ07033%40cressida.cert.fr%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000010.html">
+   <LINK REL="Next"  HREF="000011.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>command \lyxdot in the upcomming version of lyx 1.5</H1>
+    <B>Jean-Pierre Chretien</B> 
+    <A HREF="mailto:tex2pdf-friends%40lists.berlios.de?Subject=Re%3A%20command%20%5Clyxdot%20in%20the%20upcomming%20version%20of%20lyx%201.5&In-Reply-To=%3C200611200804.kAK84uZ07033%40cressida.cert.fr%3E"
+       TITLE="command \lyxdot in the upcomming version of lyx 1.5">chretien
+       </A><BR>
+    <I>Mon Nov 20 09:04:56 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000010.html">[tex2pdf-friends] Anyone there listenig?
+</A></li>
+        <LI>Next message: <A HREF="000011.html">[tex2pdf-friends] I am back ;-)
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#13">[ date ]</a>
+              <a href="thread.html#13">[ thread ]</a>
+              <a href="subject.html#13">[ subject ]</a>
+              <a href="author.html#13">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>
+&gt;&gt;<i>Date: Sun, 19 Nov 2006 03:16:59 +0100
+</I>&gt;&gt;<i>From: Uwe St&#195;&#182;hr &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/tex2pdf-friends">uwestoehr at web.de</A>&gt;
+</I>&gt;&gt;<i>To: <A HREF="https://lists.berlios.de/mailman/listinfo/tex2pdf-friends">Jean-Pierre.Chretien at cert.fr</A>
+</I>&gt;&gt;<i>CC: <A HREF="https://lists.berlios.de/mailman/listinfo/tex2pdf-friends">Kornel.Benko at berlin.de</A>
+</I>&gt;&gt;<i>Subject: Re: command \lyxdot in the upcomming version of lyx 1.5
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> &gt; Maybe Uwe St&#195;&#182;hr could take the task of maintaining the project? I
+</I>&gt;&gt;<i> &gt; mean, no development involved, just keep the list open?
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>Hi Jean-Pierre,
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>Kornel kindly forwarded me your message. I unfortunaly missed the 
+</I>&gt;&gt;<i>problematic and the details.
+</I>&gt;&gt;<i>What exactly is the \lyxdot problem?
+</I>
+In 1.5 a LyX version of the dot has been added, so that the regular expressions
+in tex2pdf which extracted the graphics file name fails.
+Kornel added a small patch to make tex2pdf still work, so he wanted to commit it to the
+project.
+
+&gt;&gt;<i>
+</I>&gt;&gt;<i>About maintaining the tex2pdf project: For what tex2pdf is currently 
+</I>&gt;&gt;<i>needed? Since LyX 1.3 we have now the export &quot;PDF (pdflatex)&quot; that does 
+</I>&gt;&gt;<i>everything that needs to be done to get beautiful PDFs. In LyX 1.4 we 
+</I>&gt;&gt;<i>now also a special graphics handling for pdflatex because PDF-, PNG-, 
+</I>&gt;&gt;<i>and JPG-images can directly be embedded to PDF-files.
+</I>
+Sure, but tex2pdf handles other stuff, like managing hyperref externally, static conversion
+of eps files to pdf with caching, makeindex management, etc. which may be used from inside LyX (here I have added
+a pdf3 format to be able to create pdf from the View/Export menu with tex2pdf), and is not bound to
+lyx : tex2pdf foo.lyx just adds lyx -e latex foo.lyx and then works an foo.tex.
+
+&gt;&gt;<i>
+</I>&gt;&gt;<i>Is there a feature left that is provided by tex2pdf that is not built in 
+</I>&gt;&gt;<i>LyX 1.4?
+</I>
+The hyperref management: take e.g. an article for a conference, build it with plain latex/dvi compilation,
+once it's OK that way, a tex2pdf run provide an hypetexed version (with PDF toc) with no extra coding.
+
+The compilation speed: with a doc with a large amount of figures, it's mure more efficient to optimize the
+layout with palin latex compilation, and to shift to pdflatex just for the last one.
+
+Semms that the tex2pdf project (which is frozen since october 23, 2003) should however cope with
+the infrequent changes in LyX which make it fail, so some commits may be needed from time to time.
+This one is the first one since the last release.
+
+I suggested your name because your LyX Installer project is on berlios.de, as tex2pdf. But I see on the project
+page that there is a new admin (Marius Tolzmann).
+
+I should have checked before, sorry, Kornel should contact him to see what's possible.
+
+Thank you for your message.
+
+Regards
+
+-- 
+Jean-Pierre
+
+
+
+
+
+
+--Cete_of_Badgers_565_000--
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000010.html">[tex2pdf-friends] Anyone there listenig?
+</A></li>
+	<LI>Next message: <A HREF="000011.html">[tex2pdf-friends] I am back ;-)
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#13">[ date ]</a>
+              <a href="thread.html#13">[ thread ]</a>
+              <a href="subject.html#13">[ subject ]</a>
+              <a href="author.html#13">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/tex2pdf-friends">More information about the tex2pdf-friends
+mailing list</a><br>
+</body></html>

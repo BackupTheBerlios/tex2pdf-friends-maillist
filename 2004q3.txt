@@ -1,0 +1,91 @@
+From Jean-Pierre.Chretien at cert.fr  Tue Sep  7 16:28:15 2004
+From: Jean-Pierre.Chretien at cert.fr (Jean-Pierre Chretien)
+Date: Tue, 7 Sep 2004 16:28:15 +0200 (MEST)
+Subject: [tex2pdf-friends] Document parsing
+Message-ID: <200409071428.i87ESFK07234@cressida.cert.fr>
+
+
+Hello,
+
+Document parsing fails if the document environment begins with
+\begin{document}%
+(or any % further on the line).
+
+Attached is a patch against 3.1.20.
+
+Regards
+
+-- 
+Jean-Pierre
+-------------- next part --------------
+*** tex2pdf-3.1.20	Tue Sep  7 15:07:03 2004
+--- tex2pdf	Tue Sep  7 15:07:22 2004
+***************
+*** 2328,2334 ****
+  
+     ### prepare the LaTeX code for PDF generation 
+     if ( $adjust_preamble eq $YES ) {
+!       $contents =~ m/^ *\\begin\{document\} *$/m;
+        $preamble = $`;
+        # Just to make sure that the original latex preamble goes
+        # to the included documents
+--- 2328,2334 ----
+  
+     ### prepare the LaTeX code for PDF generation 
+     if ( $adjust_preamble eq $YES ) {
+!       $contents =~ m/^ *\\begin\{document\}[ %]*$/m;
+        $preamble = $`;
+        # Just to make sure that the original latex preamble goes
+        # to the included documents
+
+From mlone at forevers.de  Wed Sep 15 18:50:26 2004
+From: mlone at forevers.de (Steffen Evers)
+Date: Wed, 15 Sep 2004 18:50:26 +0200
+Subject: [tex2pdf-friends] Document parsing
+In-Reply-To: <200409071428.i87ESFK07234@cressida.cert.fr>
+References: <200409071428.i87ESFK07234@cressida.cert.fr>
+Message-ID: <20040915165026.GA3056@insel.cs.tu-berlin.de>
+
+On Tue, Sep 07, 2004 at 16:28, Jean-Pierre Chretien wrote:
+> 
+> Hello,
+> 
+> Document parsing fails if the document environment begins with
+> \begin{document}%
+> (or any % further on the line).
+> 
+> Attached is a patch against 3.1.20.
+> 
+> Regards
+> 
+> -- 
+> Jean-Pierre
+
+Hello Jean-Pierre!
+
+
+> !       $contents =~ m/^ *\\begin\{document\} *$/m;
+> --- 2328,2334 ----
+> !       $contents =~ m/^ *\\begin\{document\}[ %]*$/m;
+
+This would only help with an empty comment, but not with somthing like:
+
+\begin{document} % begin document
+
+I think, the following should work in all cases:
+> !       $contents =~ m/^ *\\begin\{document\}/m;
+
+However, not tested ...
+
+Please tell me if it works all right. Then I will check it into CVS.
+
+Bye, Steffen
+
+-- 
+Dipl.-Inform. Steffen Evers      | Technical University Berlin
+mailto:tron at cs.tu-berlin.de      | FK IV - FLP - FR 6-10
+Office: FR 6078                  | Franklinstr. 28-29
+Fon: +49-30-314-73558            | D-10587 Berlin / Germany
+
+
+
